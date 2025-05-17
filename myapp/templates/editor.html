@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Code Editor</title>
+    <style>
+        textarea, input, pre {
+            width: 100%;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Python Code Editor</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label>Code:</label><br>
+        <textarea name="code" rows="10" placeholder="Write Python code here...">{{ code }}</textarea><br>
+
+        <label>Input (optional):</label><br>
+        <textarea name="input_data" rows="3" placeholder="Enter input like: 2 3">{{ input_data }}</textarea><br>
+
+        <button type="submit">Run</button>
+    </form>
+
+    <h3>Output:</h3>
+    <pre>{{ output }}</pre>
+</body>
+</html>
+
+
+  
+
+
