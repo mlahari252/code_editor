@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-=so#xzk&l)$k_huh2jwk-ihna3fs2mjk#h0obe%+uec^m&_igl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['codeeditor-production-2c20.up.railway.app', 'localhost', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS= ["codeeditor-production-2c20.up.railway.app"]
 
 
 # Application definition
