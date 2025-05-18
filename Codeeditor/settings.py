@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
-CSRF_TRUSTED_ORIGINS = ['https://codeeditor-production-2c20.up.railway.app']
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=so#xzk&l)$k_huh2jwk-ihna3fs2mjk#h0obe%+uec^m&_igl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+CSRF_TRUSTED_ORIGINS = [
+    "https://codeeditor-production-ef66.up.railway.app",
+]
+
 
 ALLOWED_HOSTS = [
     'codeeditor-production-ef66.up.railway.app',
